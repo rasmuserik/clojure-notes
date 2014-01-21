@@ -1,2 +1,49 @@
-clojure-notes
-=============
+- JavaScript state of generational garbage collectors as of 2014 (clojure data structures builds on the assumption that we have fast collection of shortlived garbage (generational garbage collectors))
+    - v8 ok
+    - mozilla not there yet, but progressing https://bugzilla.mozilla.org/show_bug.cgi?id=619558 https://blog.mozilla.org/nnethercote/2014/01/20/a-big-step-towards-generational-and-compacting-gc/ https://blog.mozilla.org/javascript/2013/07/18/clawing-our-way-back-to-precision/
+    - JSC not there yet, but progressing  https://bugs.webkit.org/show_bug.cgi?id=121074 https://github.com/WebKit/webkit/blob/master/Source/JavaScriptCore/ChangeLog
+    - Chakra ¿quasi-generational? http://blogs.msdn.com/b/ie/archive/2012/06/13/advances-in-javascript-performance-in-ie10-and-windows-8.aspx
+- tooling
+  - ide - lighttable
+  - building - lein
+  - linting - eastwood
+  - cljs
+- online resources
+  - https://github.com/swannodette/lt-cljs-tutorial
+  - https://github.com/swannodette/hello-cljsc
+  - https://github.com/magomimmo/modern-cljs
+  - https://github.com/functional-koans/clojure-koans
+  - clojure-conj talks
+- books (non-clojure)
+  - closure: the definitive guide
+  - SICP
+  - PAIP
+- platform - clojurescript server and client
+  - routing: ???
+  - DOM: react for dom
+  - opengl: clojure+clojurescript webgl/opengl-es abstraction?
+- target-types
+  - html-apps
+    - dist
+      - phonegap
+      - single-page browser app
+      - static-pages rendered on nodejs
+      - node-webkit
+    - tech
+      - ¿routing library?
+      - react (evt. via om or similar)
+  - GL-apps
+    - dist
+      - webgl browsers
+      - libgdx (or ludei)
+      - node-webkit
+    - webgl + open
+  - libraries
+    - dist
+      - npm
+      - bower
+      - clojars
+      - mavencentral
+
+----
+[![repos](https://ssl.solsort.com/_github_rasmuserik_clojure-notes.png)](https://github.com/rasmuserik/clojure-notes)
